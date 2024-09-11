@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Fertilizer Usage Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fertilizer Usage Optimizer</h1>
+        <form id="fertilizerForm">
+            <label for="ph">Soil pH:</label>
+            <input type="number" id="ph" step="0.1" required>
+            
+            <label for="n">Nitrogen (N) (in kg/ha):</label>
+            <input type="number" id="n" step="0.1" placeholder=" Nitrogen (N)" required>
+            <label for="p">Phosphate (P) (in kg/ha):</label>
+            <input type="number" id="p" step="0.1" placeholder="Phosphate (P)" required>
+            <label for="k">Potassium (k) (in kg/ha):</label>
+            <input type="number" id="k" step="0.1" placeholder="Potassium (K)" required>
+            <label for="c">Carbon (C) (in kg/ha):</label>
+            <input type="number" id="c" step="0.1" placeholder="Carbon (C)" required>
+            <label for="b">Boron (B)(in kg/ha):</label>
+            <input type="number" id="b" step="0.1" placeholder="Boron (B)" required>
+            <label for="fe">Iron (Fe) (in kg/ha):</label>
+            <input type="number" id="fe" step="0.1" placeholder="Iron (Fe)" required>
+            <label for="mn">Mangsnese (Mn) (in kg/ha):</label>
+            <input type="number" id="mn" step="0.1" placeholder="Manganese (Mn)" required>
+            <label for="zn">Zinc (Zn) (in kg/ha):</label>
+            <input type="number" id="zn" step="0.1" placeholder="Zinc (Zn)" required>
+            <label for="mo">Molybdenum (Mo) (in kg/ha):</label>
+            <input type="number" id="mo" step="0.1" placeholder="Molybdenum (Mo)" required>
+            <label for="cu">Copper (Cu) (in kg/ha):</label>
+            <input type="number" id="cu" step="0.1" placeholder="Copper (Cu)" required>
+            <label for="cl">Chloride (Cl) (in kg/ha):</label>
+            <input type="number" id="cl" step="0.1" placeholder="Chloride (Cl)" required>
+            <label for="s">Sulphur (S) (in kg/ha):</label>
+            <input type="number" id="s" step="0.1" placeholder="Sulphur (S)" required>
+            <label for="ca">Calcium(Ca) (in kg/ha):</label>
+            <input type="number" id="ca" step="0.1" placeholder="Calcium (Ca)" required>
+            <label for="na">Sodium (Na) (in kg/ha):</label>
+            <input type="number" id="na" step="0.1" placeholder="Sodium (Na)" required>
+            <label for="mg">Magnesium (Mg) (in kg/ha):</label>
+            <input type="number" id="mg" step="0.1" placeholder="Magnesium (Mg)" required>
+            <!-- Add more nutrient inputs as needed -->
+
+            <label for="area">Field Area (in Hectares):</label>
+            <input type="number" id="area" step="0.1" required>
+
+            <button type="button" onclick="calculateFertilizer()">Get Recommendations</button>
+        </form>
+
+        <div id="results"></div>
+
+        <div id="Contact"></div>
+            <h3>Contact Us</h3>
+            <form action="mailto:shahzankhursheed786@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                   <label for="email">Your E-mail :</label>
+                   <br>
+                   <input type="email" id="email" name="email" placeholder="Enter your E-mail">
+                   <br>
+                   <label for="query">Your Query :</label>
+                   <br>
+                   <textarea name="query" id="query" rows="4" placeholder="Enter your Query"></textarea>
+                   <br>
+                   <button type="submit">Send Query</button>
+                   <br>
+                </fieldset>
+            </form>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
